@@ -17,7 +17,7 @@ class DriveCommand : Command() {
     }
     override fun execute()
     {
-        Robot.drivetrainSubsystem.curveDrive(Robot.oi.getDriveSpeedRight(), Robot.oi.getDriveSpeedLeft())
+        Robot.drivetrainSubsystem.tankDrive(Robot.oi.getDriveSpeedRight(), Robot.oi.getDriveSpeedLeft())
     }
     override fun isFinished() : Boolean
     {
